@@ -93,7 +93,7 @@ print(80 * "=")
 print("Exercise 4D")
 print(80 * "=")
 SAMPLING_RATE = 2048
-total_size = df["ip_size"].sum()*SAMPLING_RATE
+total_size = df["ip_size"].sum() * SAMPLING_RATE
 print(f"total traffic is {total_size/1e6} MB")
 print()
 print(80 * "-")
@@ -118,5 +118,3 @@ top_5_pair["is_top5_listener"] = top_5_pair["dst_IP"].isin(top_5_listeners["dst_
 print(top_5_pair)
 print(80 * "-")
 print()
-
-
